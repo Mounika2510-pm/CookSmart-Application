@@ -86,7 +86,7 @@ All components adjust dynamically using media queries.
 
 ```bash
 # 1️⃣ Clone the repo
-git clone https://github.com/YOUR_USERNAME/cooksmart.git
+git clone https://github.com/Mounika2510-pm/CookSmart-Application.git
 cd cooksmart
 
 # 2️⃣ Install dependencies
