@@ -1,0 +1,128 @@
+.recipes-page {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.recipes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.recipes-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.recipes-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  min-width: 160px !important;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.create-btn {
+  background-color: #ff6b00 !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.create-btn:hover {
+  background-color: #e85d04 !important;
+}
+
+.recipes-grid {
+  margin-top: 1rem;
+}
+
+.recipe-card {
+  border-radius: 14px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.recipe-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.recipe-meta {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+}
+
+@media (max-width: 768px) {
+  .recipe-builder-page,
+  .recipes-page {
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  .builder-title,
+  .recipes-title {
+    font-size: 1.5rem;
+  }
+
+  .recipes-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-control {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .builder-paper,
+  .recipe-card {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .builder-section-title {
+    font-size: 1.1rem;
+  }
+}

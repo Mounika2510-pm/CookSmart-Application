@@ -1,0 +1,84 @@
+.welcome-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("./assets/foodbgimage.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.welcome-container::before {
+  content: none;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 850px;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.45); 
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+.animate-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.animate-title span {
+  color: #ff8c00;
+}
+
+.animate-subtext {
+  font-size: 1.25rem;
+  color: #f2f2f2;
+  line-height: 1.7;
+  animation: fadeInUp 1.8s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-title {
+    font-size: 2.3rem;
+  }
+
+  .animate-subtext {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .welcome-content {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .animate-title {
+    font-size: 2rem;
+  }
+
+  .animate-subtext {
+    font-size: 1rem;
+  }
+}
+

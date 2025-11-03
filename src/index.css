@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff6b00;
+  --secondary: #ffa94d;
+  --accent: #ffb3b3;
+  --bg-light: #fffaf5;
+  --text-dark: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+button {
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #e85d04;
+  transform: scale(1.03);
+}
