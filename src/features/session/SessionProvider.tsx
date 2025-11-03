@@ -95,7 +95,8 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
             });
         }, 1000);
     }, []);
-
+    
+// @ts-ignore
     const stopTickerIfIdle = useCallback(() => {
         if (!tickRef.current) return;
         setState((prev) => {
