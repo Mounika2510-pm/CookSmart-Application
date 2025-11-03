@@ -43,7 +43,7 @@ It allows users to **create, edit, organize, and cook recipes step-by-step**, wi
 
 ---
 
-### 🔥 4. **Cooking Page**
+### 🍳 4. **Cooking Page**
 - Displays a recipe’s steps one by one with clear instructions.
 - Includes **Start**, **Pause**, and **Stop** functionality for step timers.
 - Smooth popup animation when the cooking screen appears.
